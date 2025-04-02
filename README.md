@@ -1,23 +1,26 @@
 **Features**
-Chat interface styled like ChatGPT with light/dark theme elements.
 
-Supports OpenAI and Workers AI models with configurable providers.
+- Chat interface styled like ChatGPT with light/dark theme elements.
 
-Responsive design with sidebar toggle for mobile devices.
+- Supports OpenAI and Workers AI models with configurable providers.
 
-Markdown-to-HTML conversion for rich text responses.
+- Responsive design with sidebar toggle for mobile devices.
 
-Deployed on Cloudflare Workers for low-latency, serverless execution.
+- Markdown-to-HTML conversion for rich text responses.
+
+- Deployed on Cloudflare Workers for low-latency, serverless execution.
 
 **Prerequisites**
-A Cloudflare account with Workers enabled.
 
-Wrangler CLI installed (npm install -g wrangler).
+- A Cloudflare account with Workers enabled.
 
-API keys for OpenAI and/or Cloudflare Workers AI.
+- Wrangler CLI installed (npm install -g wrangler).
+
+- API keys for OpenAI and/or Cloudflare Workers AI.
 
 **Create a .dev.vars file in the root directory or use the Cloudflare dashboard to set these secrets:
 **
+
 OPENAI_TOKEN=your-openai-api-key
 WORKERSAI_TOKEN=your-workers-ai-api-key
 ACCOUNT_ID=your-cloudflare-account-id
@@ -26,6 +29,7 @@ AI_GATEWAY_TOKEN=your-ai-gateway-token
 
 **Alternatively, use Wrangler to set secrets
 **
+
 wrangler secret put OPENAI_TOKEN
 wrangler secret put WORKERSAI_TOKEN
 wrangler secret put ACCOUNT_ID
