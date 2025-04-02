@@ -1,0 +1,21 @@
+/**
+ * For more details on how to configure Wrangler, refer to:
+ * https://developers.cloudflare.com/workers/wrangler/configuration/
+ */
+ {
+	"$schema": "node_modules/wrangler/config-schema.json",
+	"name": "chatgpt-wrapper",
+	"main": "src/index.js",
+	"compatibility_date": "2025-03-11",
+	"observability": {
+		"enabled": true
+	},
+  	"routes": [
+    {
+      "pattern": "aichat.sherilnagoor.com",
+      "custom_domain": true
+    }
+  	],
+  	"workers_dev": false,
+ 	"preview_urls": false
+}
